@@ -97,10 +97,10 @@ int main(void)
 
   void push_button()
   {
-  	button_status = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
+  	button_status = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4);
   	if (button_status == 0)
   	{
-  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_1, GPIO_PIN_SET);
+  		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
   		HAL_Delay(500);
   	}
   	else
